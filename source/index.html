@@ -16,11 +16,11 @@
 			</picture>
 			<img class="page-header__logotype-name" src="http://placehold.it/150x100" alt="Cat Energy">
 		</a>
-		<!--header__trigger-nojs для переключателя без JS-->
+		<!--page-header__trigger--nojs для переключателя без JS-->
 		<button class="page-header__trigger header__trigger--nojs" type="button" title="Главная навигация">
 			<span class="page-header__trigger-name">Навигация</span>
 		</button>
-		<!--page-header__list-open для навигации без JS-->
+		<!--page-header__list--open для навигации без JS-->
 		<ul class="page-header__list page-header__list--nojs">
 			<li class="page-header__item"><a class="page-header__link page-header__link--active">главная</a></li>
 			<li class="page-header__item"><a class="page-header__link">каталог продукции</a></li>
@@ -39,24 +39,24 @@
 	</section>
 	<section class="programs">
 		<h1 class="visually-hidden">Программы для ваших кисулек</h1>
-		<div class="program__column">
-			<article class="program__card">
-				<div class="program__img">
-					<svg class="program__icon"></svg>
+		<div class="programs__column">
+			<article class="programs__card">
+				<div class="programs__img">
+					<svg class="programs__icon"></svg>
 				</div>
-				<h3 class="program__title">похудение</h3>
-				<p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-				<a class="program__link">каталог slim</a>
+				<h3 class="programs__title">похудение</h3>
+				<p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+				<a class="programs__link">каталог slim</a>
 			</article>
 		</div>
-		<div class="program__column">
-			<article class="program__card">
-				<div class="program__img">
-					<svg class="program__icon"></svg>
+		<div class="programs__column">
+			<article class="programs__card">
+				<div class="programs__img">
+					<svg class="programs__icon"></svg>
 				</div>
-				<h3 class="program__title">набор массы</h3>
-				<p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-				<a class="program__link">каталог pro</a>
+				<h3 class="programs__title">набор массы</h3>
+				<p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+				<a class="programs__link">каталог pro</a>
 			</article>
 		</div>
 	</section>
@@ -69,6 +69,70 @@
 			<li class="instruction__item instruction__item--dining"><p class="instruction__text">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
 			<li class="instruction__item instruction__item--clock"><p class="instruction__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
 		</ul>
+	</section>
+	<section class="example">
+		<h2 class="visually-hidden">История про кота</h2>
+		<div class="example__wrapper">
+			<section class="example__column">
+				<h2 class="example__title">Живой пример</h2>
+				<p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim.
+					Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+				</p>
+				<div class="example__result">
+					<ul class="result__list">
+						<li class="result__item">
+							<div class="result__wrapper">
+								<strong class="result__total">5 кг</strong>
+								<p class="result__text">снижение веса</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div class="result__wrapper">
+								<strong class="result__total">60 дней</strong>
+								<p class="result__text">затрачено времени</p>
+							</div>
+						</li>
+					</ul>
+					<p class="example__total"><span>Затраты на питание:</span> 15 000 руб.</p>
+				</div>
+			</section>
+			<section class="example__column">
+				<h2 class="visually-hidden">Живой пример предварительный просмотр</h2>
+				<div class="comparisons">
+					<div class="comparisons__group-pick">
+						<picture>
+							<img class="comparisons__img comparisons__img--before" src="http://placehold.it/150x100" alt="Кот не в форме">
+						</picture>
+						<picture>
+							<img class="comparisons__img comparisons__img--after" src="http://placehold.it/150x100" alt="Кот в форме">
+						</picture>
+					</div>
+					<div class="comparisons__range">
+						<button class="comparisons__btn">Было</button>
+						<div class="comparisons__progress">
+							<div class="comparisons__tog"></div>
+						</div>
+						<button class="comparisons__btn">Стало</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<section class="contacts">
+		<h2 class="visually-hidden">Контакты и карта</h2>
+		<div class="contacts__wrapper">
+			<div class="contacts__card">
+				<b class="contacts__slogan">Приглашаем
+					<br class="contacts__br">к сотрудничеству дилеров!
+				</b>
+				<p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br class="contacts__br-address">
+					<br class="contacts__br-address">Санкт-Петербург
+				</p>
+			</div>
+		</div>
+		<div class="contacts__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" allowfullscreen=""></iframe>
+		</div>
 	</section>
 </main>
 <footer class="page-footer">

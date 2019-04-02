@@ -16,11 +16,11 @@
 			</picture>
 			<img class="page-header__logotype-name" src="http://placehold.it/150x100" alt="Cat Energy">
 		</a>
-		<!--header__trigger-nojs для переключателя без JS-->
+		<!--page-header__trigger--nojs для переключателя без JS-->
 		<button class="page-header__trigger header__trigger--nojs" type="button" title="Главная навигация">
 			<span class="page-header__trigger-name">Навигация</span>
 		</button>
-		<!--page-header__list-open для навигации без JS-->
+		<!--page-header__list--open для навигации без JS-->
 		<ul class="page-header__list page-header__list--nojs">
 			<li class="page-header__item"><a class="page-header__link page-header__link--active">главная</a></li>
 			<li class="page-header__item"><a class="page-header__link">каталог продукции</a></li>
@@ -29,7 +29,117 @@
 	</nav>
 </header>
 <main class="page-main">
-
+	<section class="page-form">
+		<h1 class="page-main__title">Подбор программы</h1>
+			<div class="page-form__container">
+				<p class="page-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+				<form action="https://echo.htmlacademy.ru" method="POST">
+					<div class="page-form__group">
+						<fieldset class="page-form__contact">
+							<legend class="visually-hidden">Информация о вашем коте</legend>
+								<ul class="page-form__list">
+									<li class="page-form__item">
+										<label class="page-form__label" for="cat-name">Имя:*</label>
+										<input class="page-form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" pattern="[A-Za-zА-Яа-яЁё]+" required>
+									</li>
+									<li class="page-form__item">
+										<label class="page-form__label" for="cat-weight">Вес (кг):*</label>
+										<input class="page-form__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+									</li>
+									<li class="page-form__item">
+										<label class="page-form__label" for="cat-age">Возраст (лет):</label>
+										<input class="page-form__input" type="number" id="cat-age" name="cat-age" placeholder="7">
+									</li>
+								</ul>
+						</fieldset>
+						<fieldset class="page-form__radio-btn">
+							<legend class="visually-hidden">Выберите программу</legend>
+							<ul class="page-form__list">
+								<li class="page-form__item">
+									<input class="page-form__input page-form__input--radio-field" type="radio" name="radio-group" id="filter-weightloss" checked>
+									<label class="page-form__label page-form__label--radio-field" for="filter-weightloss">Похудение</label>
+								</li>
+								<li class="page-form__item">
+									<input class="page-form__input page-form__input--radio-field" type="radio" name="radio-group" id="filter-weightgain">
+									<label class="page-form__label page-form__label--radio-field" for="filter-weightgain">Набор массы</label>
+								</li>
+								<li class="page-form__input">
+									<input class="page-form__input page-form__input--radio-field" type="radio" name="radio-group" id="filter-needhelp">
+									<label class="page-form__label page-form__label--radio-field" for="filter-needhelp">Не знаю (нужен ваш совет)</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<div class="page-form__title-wrapper">
+						<h2 class="page-form__title form__title--name">Контактные данные (владельца кота)</h2>
+					</div>
+					<fieldset class="page-form__contact">
+						<ul class="page-form__list">
+							<li class="page-form__item">
+								<label class="page-form__label" for="user-email">E-mail:*</label>
+								<input class="page-form__input" type="email" id="user-email" name="user-name" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+								<svg class="page-form__icon page-form__icon--email"></svg>
+							</li>
+							<li class="page-form__item">
+								<label class="page-form__label" for="user-tel">Телефон:*</label>
+								<input class="page-form__input" type="tel" id="user-tel" name="user-tel" placeholder="8 (960) 900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+								<svg class="page-form__icon page-form__icon--tel"></svg>
+							</li>
+						</ul>
+					</fieldset>
+					<div class="page-form__title-wrapper">
+						<h2 class="page-form__title page-form__title--comment">Комментарий</h2>
+					</div>
+					<fieldset class="page-form__textarea">
+						<textarea class="page-form__textarea-msg" name="user-msg" id="user-msg" placeholder="Расскажите обо всех повадках кота"></textarea>
+					</fieldset>
+					<div class="page-form__title-wrapper">
+						<h2 class="page-form__title page-form__title--extra">Дополнительно</h2>
+					</div>
+					<fieldset class="page-form__checkbox-field">
+						<legend class="visually-hidden">Выберите дополительную информацию</legend>
+						<ul class="page-form__list page-form__list--checkbox-field">
+							<li class="page-form__item page-form__item--checkbox-field">
+								<input class="page-form__input page-form__input--checkbox-field" type="checkbox" name="checkbox-group" id="filter-sugar" checked>
+								<label class="page-form__label page-form__label--checkbox-field" for="filter-sugar">Сахарозаменитель</label>
+							</li>
+							<li class="page-form__item form__item--checkbox-field">
+								<input class="page-form__input page-form__input--checkbox-field" type="checkbox" name="checkbox-group" id="filter-water">
+								<label class="page-form__label page-form__label--checkbox-field" for="filter-water">Питьевая вода</label>
+							</li>
+							<li class="page-form__item page-form__item--checkbox-field">
+								<input class="page-form__input page-form__input--checkbox-field" type="checkbox" name="checkbox-group" id="filter-milk">
+								<label class="page-form__label page-form__label--checkbox-field" for="filter-milk">Молоко</label>
+							</li>
+							<li class="page-form__item page-form__item--checkbox-field">
+								<input class="page-form__input page-form__input--checkbox-field" type="checkbox" name="checkbox-group" id="filter-vitamins">
+								<label class="page-form__label page-form__label--checkbox-field" for="filter-vitamins">Витамины</label>
+							</li>
+						</ul>
+					</fieldset>
+					<div class="page-form__submit-box">
+						<button class="btn btn--page-form" type="submit">Отправить заявку</button>
+						<span class="form__legend"><sup>*</sup> — Обязательные поля</span>
+					</div>
+				</form>
+      </div>
+	</section>
+	<section class="contacts">
+		<h2 class="visually-hidden">Контакты и карта</h2>
+		<div class="contacts__wrapper">
+			<div class="contacts__card">
+				<b class="contacts__slogan">Приглашаем
+					<br class="contacts__br">к сотрудничеству дилеров!
+				</b>
+				<p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br class="contacts__br-address">
+					<br class="contacts__br-address">Санкт-Петербург
+				</p>
+			</div>
+		</div>
+		<div class="contacts__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" allowfullscreen=""></iframe>
+		</div>
+	</section>
 </main>
 <footer class="page-footer">
 	<section class="page-footer__wrapper">
