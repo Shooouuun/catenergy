@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.index-page {
+  min-width: 320px;
+  font-family: @font;
+  font-size: @default-fs;
+  line-height: @default-lh;
+  font-weight: 400;
+}

@@ -1,0 +1,41 @@
+.example {
+  .position-rel;
+  background: @bc-grey;
+
+  .example__wrapper {
+    .flex-fw_w;
+    margin: 0 20px;
+  }
+
+  .example__column {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 38px 0 0 0;
+  }
+
+  .example__column:last-child {
+    padding: 0 0 2px;
+  }
+
+  .example__title {
+    .position-rel;
+    .fontz-fw (36px, 400);
+    color: @main-color-black;
+    margin-bottom: 44px;
+  }
+
+  .example__text {
+    font-family: @default-font;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+
+  .example__total {
+    font-family: @font;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    color: @main-color-black;
+  }
+}
