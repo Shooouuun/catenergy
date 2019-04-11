@@ -1,5 +1,6 @@
 .result__list {
-  .flex-jc_sb;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0 auto 36px;
   width: 280px;
@@ -9,7 +10,7 @@
     width: 100%;
     padding: 16px 10px 2px;
     text-align: center;
-    border: 1px solid @border-grey;
+    border: 1px solid @border-color-secondary;
     border-radius: 5px;
   }
 
@@ -19,19 +20,21 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -26px;
-    background: @bc-grey;
+    background: @palette-tertiary;
   }
 
   .result__total {
-    .fontz-fw(24px, 400);
+    font-size: 24px;
+    font-weight: 400;
     text-transform: uppercase;
-    color: @main-color-black;
+    color: @primary-color;
   }
 
   .result__text {
-    .fontz-lh(12px, 12px);
+    font-size: 12px;
+    line-height: 12px;
     margin: 7px 0 0;
-    color: @main-color-black;
-    font-family: @default-font;
+    color: @tertiary-color;
+    font-family: @font-family-secondary;
   }
 }

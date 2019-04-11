@@ -1,9 +1,10 @@
 .example {
-  .position-rel;
-  background: @bc-grey;
+  position: relative;
+  background: @palette-tertiary;
 
   .example__wrapper {
-    .flex-fw_w;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 20px;
   }
 
@@ -19,23 +20,24 @@
   }
 
   .example__title {
-    .position-rel;
-    .fontz-fw (36px, 400);
-    color: @main-color-black;
+    position: relative;
+    font-size: 36px;
+    font-weight: 400;
+    color: @tertiary-color;
     margin-bottom: 44px;
   }
 
   .example__text {
-    font-family: @default-font;
+    font-family: @font-family-secondary;
     line-height: 18px;
     margin-bottom: 25px;
   }
 
   .example__total {
-    font-family: @font;
+    font-family: @font-family-primary;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 34px;
-    color: @main-color-black;
+    color: @primary-color;
   }
 }

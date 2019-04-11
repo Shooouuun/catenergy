@@ -11,31 +11,28 @@
   background: transparent;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 html {
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  outline: none;
-  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .index-page {
   min-width: 320px;
-  font-family: @font;
-  font-size: @default-fs;
-  line-height: @default-lh;
+  font-family: @font-family-primary;
+  font-size: @font-size-primary;
+  line-height: @line-height-primary;
   font-weight: 400;
+  font-style: normal;
+
+  color: @primary-color;
+
+  background-color: @palette-primary;
 }

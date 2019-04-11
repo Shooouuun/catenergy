@@ -1,57 +1,57 @@
 .comparisons {
   display: block;
 
-  &__group-pick {
+  .comparisons__group-pick {
     max-width: 280px;
     margin: 0 auto;
   }
 
-  &__img {
+  .comparisons__img {
     display: block;
     margin-left: -20px;
     max-width: inherit;
   }
-}
 
-.comparisons__range {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 193px;
-  margin: 0 auto;
-  padding: 33px 0 35px;
-}
+  .comparisons__range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 193px;
+    margin: 0 auto;
+    padding: 30px 0 32px;
+  }
 
-.comparisons__btn {
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  border: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  cursor: pointer;
-  color: #111111;
-}
+  .comparisons__btn {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: @primary-color;
+    font-family: @font-family-primary;
+  }
 
-.comparisons__progress {
-  position: relative;
-  max-width: 84px;
-  width: 100%;
-  height: 14px;
-  border: 1px solid #d9d9d9;
-  border-radius: 50px;
-  background: #ffffff;
-}
+  .comparisons__progress {
+    position: relative;
+    max-width: 84px;
+    width: 100%;
+    height: 14px;
+    border: 1px solid @border-color-secondary;
+    border-radius: 50px;
+    background: @palette-primary;
+  }
 
-.comparisons__progress::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  right: 5px;
-  width: 35px;
-  height: 6px;
-  border-radius: 50px;
-  background: #68b738;
-  transform: translateY(-50%);
+  .comparisons__progress::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    right: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 50px;
+    background: @palette-secondary;
+    transform: translateY(-50%);
+  }
 }
