@@ -18,6 +18,16 @@
   }
 
   &--preview {
+    @media (min-width: @desktop-width) {
+      .page-header__link {
+        color: @quaternary-color;
+
+        &::after {
+          background: @palette-primary;
+        }
+      }
+    }
+
     &::after {
       position: absolute;
       content: "";
