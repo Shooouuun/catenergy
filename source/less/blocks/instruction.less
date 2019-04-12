@@ -1,53 +1,29 @@
 .instruction {
   margin: 18px 20px 0;
+}
 
-  .instruction__title {
-    font-size: 36px;
-    font-weight: 400;
-    color: @primary-color;
-    padding-bottom: 49px;
-  }
+.instruction__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: @primary-color;
+  padding-bottom: 49px;
+}
 
-  .instruction__list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    counter-reset: section;
-    margin-bottom: 22px;
-  }
+.instruction__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  counter-reset: section;
+  margin-bottom: 22px;
+}
 
-  .instruction__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
+.instruction__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 
-  .instruction__item--leaf {
-    &::before {
-      background-image: url("../img/advantage-leaf@1x.png");
-    }
-  }
-
-  .instruction__item--powder {
-    &::before {
-      background-image: url("../img/advantage-powder@1x.png");
-    }
-  }
-
-  .instruction__item--dining {
-    &::before {
-      background-image: url("../img/advantage-dining@1x.png");
-    }
-  }
-
-  .instruction__item--clock {
-    &::before {
-      background-image: url("../img/advantage-clock@1x.png");
-    }
-  }
-
-  .instruction__item::before {
+  &::before {
     display: block;
     content: "";
     flex-shrink: 0;
@@ -60,7 +36,32 @@
     background-repeat: no-repeat;
   }
 
-  .instruction__text {
-    font-family: @font-family-secondary;
+  &--leaf {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
   }
+
+  &--powder {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--dining {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
+  }
+
+}
+
+.instruction__text {
+  font-family: @font-family-secondary;
 }
