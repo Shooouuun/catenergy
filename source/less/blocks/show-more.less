@@ -1,0 +1,38 @@
+.show-more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-plus.svg") no-repeat center;
+  }
+}
+
+.show-more__subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @primary-color;
+  text-transform: @text-transform-base;
+  margin-bottom: 7px;
+}
+
+.show-more__text {
+  font-family: @font-family-secondary;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.btn--show-more {
+  background: @palette-tertiary;
+  color: @secondary-color;
+}

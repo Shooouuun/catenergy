@@ -1,0 +1,43 @@
+.example {
+  position: relative;
+  background: @palette-tertiary;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.example__column {
+  flex: 0 0 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 38px 0 0 0;
+
+  &:last-child {
+    padding: 0 0 2px;
+  }
+}
+
+.example__title {
+  position: relative;
+  font-size: 36px;
+  font-weight: 400;
+  color: @tertiary-color;
+  margin-bottom: 44px;
+}
+
+.example__text {
+  font-family: @font-family-secondary;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+
+.example__total {
+  font-family: @font-family-primary;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  color: @primary-color;
+}
