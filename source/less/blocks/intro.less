@@ -3,6 +3,18 @@
   text-align: center;
   padding: 0 20px 22px;
   color: @quaternary-color;
+
+  @media (min-width: @tablet-width) {
+    min-height: 847px;
+    padding: 37px 80px 0 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 99px 80px 0 80px;
+    min-height: 530px;
+    width: 1220px;
+  }
 }
 
 .intro__title {
@@ -10,11 +22,53 @@
   line-height: 36px;
   font-weight: 400;
   margin: 27px 0 23px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    color: @primary-color;
+    text-align: left;
+    margin: 0 0 42px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 530px;
+  }
 }
 
 .intro__tagline {
   text-transform: uppercase;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    color: @primary-color;
+    text-align: left;
+    margin: 0 0 49px 1px;
+    z-index: 100;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 54px 0;
+  }
+}
+
+.intro__img {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 12px;
+    right: 188px;
+    left: auto;
+  }
 }
 
 .intro__btn {
@@ -24,4 +78,16 @@
   text-transform: uppercase;
   padding: 11px 0 11px;
   z-index: 1000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding: 17px 3px 17px 0;
+    width: 245px;
+    z-index: 101;
+    margin: 0 0 0 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
