@@ -6,6 +6,11 @@
 .page-footer__wrapper {
   text-align: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
@@ -15,4 +20,8 @@
 .page-footer__social {
   border-top: 1px solid rgba(17, 17, 17, 0.1);
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

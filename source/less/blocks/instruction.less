@@ -1,5 +1,16 @@
 .instruction {
   margin: 18px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 15px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    margin: 43px auto 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .instruction__title {
@@ -7,6 +18,12 @@
   font-weight: 400;
   color: @primary-color;
   padding-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 72px;
+  }
 }
 
 .instruction__list {
@@ -14,7 +31,16 @@
   flex-wrap: wrap;
   list-style: none;
   counter-reset: section;
-  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 -30px 0 -30px;
+    border-bottom: 1px solid @border-color-secondary;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -40px 0 -40px;
+    border-bottom: none;
+  }
 }
 
 .instruction__item {
@@ -22,6 +48,37 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: block;
+    min-height: 230px;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 87px;
+    width: 80px;
+    height: 80px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 56px;
+    }
+
+    &::after {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      left: 145px;
+      top: -39px;
+      font-size: 280px;
+      line-height: 1;
+      font-family: @font-family-primary;
+      color: @palette-tertiary;
+      z-index: -1;
+    }
+  }
 
   &::before {
     display: block;
@@ -34,6 +91,12 @@
     background-size: 50px;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 32px;
+    }
   }
 
   &--leaf {
@@ -59,8 +122,26 @@
       background-image: url("../img/advantage-clock@1x.png");
     }
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 0;
+    margin-bottom: 30px;
+
+    &::after {
+      left: 153px;
+    }
+  }
 }
 
 .instruction__text {
   font-family: @font-family-secondary;
+
+  @media (min-width: @tablet-width) {
+    max-width: 250px;
+    color: @secondary-color;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
