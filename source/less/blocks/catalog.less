@@ -1,15 +1,13 @@
-
 .catalog {
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    padding: inherit;
   }
-}
 
-.catalog__wrapper {
-  @media (min-width: @tablet-width) {
-    padding: 0 20px;
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
   }
 }
 
@@ -24,8 +22,13 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    padding: 37px 20px 28px;
+    margin: inherit;
+    padding: 37px 20px 105px 30px;
     border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 65px 20px 108px 40px;
   }
 }
 
@@ -35,6 +38,22 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+}
+
+.catalog__wrapper-item {
+  @media (min-width: @tablet-width) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-direction: column;
+    margin: 60px 0 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: 57px 0 85px;
   }
 }
 
@@ -47,16 +66,16 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    flex: 0 0 50%;
-    max-width: 50%;
     flex-direction: column;
-    background: #f2f2f2;
-    margin: 150px 0 0;
-    padding: 0 30px;
+    background: @palette-tertiary;
+    margin: 0 30px;
+    padding: 0 38px;
+    border: none;
+  }
 
-    &:nth-child(odd) {
-      margin-right: 60px;
-    }
+  @media (min-width: @desktop-width) {
+    margin: 0 40px;
+    padding: 0 38px;
   }
 }
 
@@ -71,7 +90,7 @@
     align-items: center;
     text-align: center;
     min-height: 213px;
-    margin: -97px auto 0;
+    margin: -84px auto 0;
   }
 }
 
@@ -82,6 +101,7 @@
   @media (min-width: @tablet-width) {
     flex: 0 0 auto;
     width: inherit;
+    padding: 34px 0 0 0;
   }
 }
 
@@ -89,6 +109,13 @@
   width: 100px;
   display: block;
   padding: 0 0 13px 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    width: 130px;
+    padding: 0;
+    margin: 0 auto 15px;
+  }
 }
 
 .catalog__subtitle {
@@ -97,6 +124,10 @@
   font-weight: 400;
   color: @primary-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .catalog__table {
@@ -109,10 +140,27 @@
   td:last-child {
     text-align: right;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
+
+    tr {
+      border-bottom: 1px solid @border-color-secondary;
+    }
+
+    td {
+      font-size: 16px;
+      padding: 8px 0 7px;
+    }
+  }
 }
 
 .catalog__btn {
   background: @palette-secondary;
   color: @quaternary-color;
   margin: -3px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 40px;
+  }
 }
