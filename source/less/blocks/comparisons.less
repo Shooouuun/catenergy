@@ -5,12 +5,61 @@
 .comparisons__group-pick {
   max-width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    max-width: inherit;
+    height: 560px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 500px;
+  }
 }
 
 .comparisons__img {
   display: block;
   margin-left: -20px;
   max-width: inherit;
+
+  &--after {
+    display: none;
+  }
+
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: -25px;
+    left: 13px;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &--before {
+      clip: rect(auto, 338px, auto, auto);
+    }
+
+    &--after {
+      display: block;
+      clip: rect(auto, auto, auto, 338px);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--before {
+      clip: rect(auto, 365px, auto, auto);
+      left: 82px;
+      bottom: 14px;
+    }
+
+    &--after {
+      display: block;
+      clip: rect(auto, auto, auto, 365px);
+      left: 82px;
+      bottom: 14px;
+    }
+  }
 }
 
 .comparisons__range {
@@ -20,6 +69,17 @@
   max-width: 205px;
   margin: 0 auto;
   padding: 30px 0 32px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 571px;
+    padding: 34px 0 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: auto;
+    padding: 16px 0 68px;
+  }
 }
 
 .comparisons__btn {
@@ -32,6 +92,18 @@
   color: @primary-color;
   font-family: @font-family-primary;
   margin: 0 1px 0 6px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding: 5px 0 1px 0;
+    border-bottom: 1px dotted @border-color-secondary;
+    margin: 0;
+    z-index: 20;
+  }
+
+  &:last-child {
+    margin-right: 1px;
+  }
 }
 
 .comparisons__progress {
@@ -55,5 +127,48 @@
     border-radius: 50px;
     background: @palette-secondary;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: inherit;
+    height: 6px;
+    margin: 4px 23px 0;
+    background: @palette-fifth;
+    border: none;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.comparisons__tog {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50.5%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid @border-color-secondary;
+    background: @palette-primary;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: @palette-secondary;
+    }
   }
 }
