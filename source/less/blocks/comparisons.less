@@ -1,5 +1,9 @@
 .comparisons {
   display: block;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+  }
 }
 
 .comparisons__group-pick {
@@ -23,10 +27,9 @@
   margin-left: -20px;
   max-width: inherit;
 
-  &--after {
+  &--right-cat {
     display: none;
   }
-
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -36,24 +39,24 @@
     max-width: 100%;
     margin: 0 auto;
 
-    &--before {
+    &--left-cat {
       clip: rect(auto, 338px, auto, auto);
     }
 
-    &--after {
+    &--right-cat {
       display: block;
       clip: rect(auto, auto, auto, 338px);
     }
   }
 
   @media (min-width: @desktop-width) {
-    &--before {
+    &--left-cat {
       clip: rect(auto, 365px, auto, auto);
       left: 82px;
       bottom: 14px;
     }
 
-    &--after {
+    &--right-cat {
       display: block;
       clip: rect(auto, auto, auto, 365px);
       left: 82px;

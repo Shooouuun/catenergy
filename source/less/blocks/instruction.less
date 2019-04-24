@@ -127,10 +127,15 @@
     max-width: 25%;
     padding-left: 40px;
     padding-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     &::after {
       left: 153px;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 24px;
     }
   }
 }
