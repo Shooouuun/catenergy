@@ -97,7 +97,7 @@
             <li class="result__item">
               <div class="result__wrapper">
                 <strong class="result__total">60 дней</strong>
-                <p class="result__text">затрачено времени</p>
+                <p class="result__text result__text--width">затрачено времени</p>
               </div>
             </li>
           </ul>
@@ -109,10 +109,14 @@
         <div class="comparisons">
           <div class="comparisons__group-pick">
             <picture>
-              <img class="comparisons__img comparisons__img--before" src="img/before-mobile@1x.png" alt="Кот не в форме">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+              <img class="comparisons__img comparisons__img--left-cat" src="img/before-mobile@1x.png" alt="Кот не в форме">
             </picture>
             <picture>
-              <img class="comparisons__img comparisons__img--after">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+              <img class="comparisons__img comparisons__img--right-cat" src="img/after-mobile@1x.png" alt="Кот в форме">
             </picture>
           </div>
           <div class="comparisons__range">

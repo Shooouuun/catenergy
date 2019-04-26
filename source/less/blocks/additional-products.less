@@ -1,6 +1,6 @@
 .additional-products {
   position: relative;
-  margin: 0 20px;
+  margin: 0 20px 35px;
 
   &::before {
     content: "";
@@ -13,6 +13,18 @@
     background: @palette-secondary;
     z-index: -1;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+
+    &::before {
+      width: 110%;
+      top: 42px;
+      right: 0;
+    }
+  }
 }
 
 .additional-products__title {
@@ -24,11 +36,26 @@
   padding-right: 22px;
   margin: 28px 0 34px 0;
   background-color: @quaternary-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 22px 36px 80px 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 89px;
+  }
 }
 
 .additional-products__list {
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .additional-products__item {
@@ -39,6 +66,20 @@
   &:first-child {
     border-top: 1px solid @border-color-secondary;
   }
+
+  &:last-child {
+    border-bottom: 1px solid @border-color-secondary;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 26px 38px 27px;
+    border: 1px solid @border-color-secondary;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 .additional-products__subtitle {
@@ -46,6 +87,10 @@
   font-weight: 400;
   text-transform: @text-transform-base;
   color: @tertiary-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .additional-products__table {
@@ -57,6 +102,26 @@
 
   td:last-child {
     text-align: right;
+    width: 30%;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+  }
+}
+
+.additional-products__tbody {
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.additional-products__cell {
+  @media (min-width: @tablet-width) {
+    text-align: right;
   }
 }
 
@@ -64,4 +129,34 @@
   background: @palette-secondary;
   color: @quaternary-color;
   display: block;
+}
+
+.additional-products__banner {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.additional-products__banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 289px;
+  width: 100%;
+  padding: 39px 10px 40px;
+  text-align: center;
+  color: @quaternary-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: @palette-secondary;
+  background-size: cover;
+}
+
+.additional-products__banner-link {
+  max-width: 150px;
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  font-family: @font-family-secondary;
 }
