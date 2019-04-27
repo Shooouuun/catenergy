@@ -1,6 +1,11 @@
 .contacts__wrapper {
   padding: 0 20px;
-  background-color: @palette-tertiary;
+  background-color: @palette-primary;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 71px;
+    background-color: @palette-primary;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -11,6 +16,10 @@
   display: flex;
   justify-content: space-between;
   padding: 28px 0 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 0 59px;
+  }
 }
 
 .contacts__slogan {
@@ -19,6 +28,12 @@
   font-weight: 400;
   flex: 0 0 50%;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 160px;
+  }
 }
 
 .contacts__address {
@@ -28,6 +43,18 @@
   line-height: 20px;
   max-width: 160px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: right;
+    line-height: 18px;
+    max-width: 160px;
+
+    span {
+      display: block;
+      margin-top: 23px;
+    }
+  }
 }
 
 .contacts__map {

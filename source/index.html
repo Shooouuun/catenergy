@@ -112,14 +112,20 @@
         <div class="comparisons">
           <div class="comparisons__group-pick">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="comparisons__img comparisons__img--left-cat" src="img/before-mobile@1x.png" alt="Кот не в форме">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="comparisons__img comparisons__img--left-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот не в форме">
             </picture>
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img class="comparisons__img comparisons__img--right-cat" src="img/after-mobile@1x.png" alt="Кот в форме">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="comparisons__img comparisons__img--right-cat" src="../img/after-mobile@1x.png" srcset="../img/after-mobile@2x.png 2x" alt="Кот в форме">
             </picture>
           </div>
           <div class="comparisons__range">
@@ -141,7 +147,7 @@
           <br class="contacts__br">к сотрудничеству дилеров!
         </p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br class="contacts__br-address">
-          Санкт-Петербург
+          <span>Санкт-Петербург</span>
         </p>
       </div>
     </div>
@@ -184,18 +190,7 @@
     </div>
   </section>
 </footer>
-<script>
-  var toggle__nav = document.querySelector(".page-header__trigger"),
-    nav = document.querySelector(".page-header__list");
-
-    toggle__nav.classList.remove("page-header__trigger--nojs");
-    nav.classList.remove("page-header__list--nojs");
-
-    toggle__nav.addEventListener("click", function (e) {
-      e.preventDefault();
-      nav.classList.toggle("page-header__list--open");
-      toggle__nav.classList.toggle("page-header__trigger--close");
-  });
-</script>
+<script src="js/script.js"></script>
+<script src="js/picturefill.min.js"></script>
 </body>
 </html>
