@@ -25,6 +25,22 @@
       right: 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 100%;
+      top: 59px;
+      right: 0;
+    }
+  }
+}
+
+.additional-products__wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 17px;
+  }
 }
 
 .additional-products__title {
@@ -45,7 +61,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 0 89px;
+    margin: 0 0 0 2px;
   }
 }
 
@@ -55,6 +71,13 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -79,6 +102,12 @@
     border: 1px solid @border-color-secondary;
     border-bottom: 0;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 26px 0 0;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -110,6 +139,14 @@
     margin-bottom: 20px;
     flex: 0 0 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 0 47%;
+
+    td:last-child {
+      width: 38%;
+    }
+  }
 }
 
 .additional-products__tbody {
@@ -129,11 +166,26 @@
   background: @palette-secondary;
   color: @quaternary-color;
   display: block;
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
 }
 
 .additional-products__banner {
   flex: 0 0 100%;
   max-width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .additional-products__banner-wrapper {
@@ -157,6 +209,9 @@
   }
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
+    min-height: 200px;
+    padding: 23px 90px 20px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -171,7 +226,6 @@
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
-
 }
 
 .additional-products__banner-link {
@@ -180,4 +234,9 @@
   margin: 0;
   line-height: 20px;
   font-family: @font-family-secondary;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-right: 45px;
+  }
 }
