@@ -34,7 +34,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 -30px 0 -30px;
-    border-bottom: 1px solid @border-color-secondary;
+    border-bottom: 1px solid @border-color;
   }
 
   @media (min-width: @desktop-width) {
@@ -102,24 +102,40 @@
   &--leaf {
     &::before {
       background-image: url("../img/advantage-leaf@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+      }
     }
   }
 
   &--powder {
     &::before {
       background-image: url("../img/advantage-powder@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+      }
     }
   }
 
   &--dining {
     &::before {
       background-image: url("../img/advantage-dining@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+      }
     }
   }
 
   &--clock {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+      }
     }
   }
 
