@@ -1,8 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Kolgaev](https://up.htmlacademy.ru/adaptive/16/user/44300).
-* Наставник: Шрёденгер.
-
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
