@@ -75,11 +75,15 @@
     margin: 13px 0 0;
     left: 22px;
     width: 115px;
-    background: @palette-tertiary;
+    background: @palette-primary;
 
     &--width {
       width: 141px;
       left: 9px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @palette-tertiary;
   }
 }

@@ -38,6 +38,10 @@
       min-height: 306px;
       z-index: -1;
 
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-mobile@2x.jpg");
+      }
+
       @media (min-width: @tablet-width) {
         display: none;
       }
@@ -52,6 +56,10 @@
         background: @palette-secondary url("../img/index-background-desktop@1x.jpg") no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
       }
     }
   }

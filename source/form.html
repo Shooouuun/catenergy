@@ -135,7 +135,7 @@
           <br class="contacts__br">к сотрудничеству дилеров!
         </b>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br class="contacts__br-address">
-          Санкт-Петербург
+          <span>Санкт-Петербург</span>
         </p>
       </div>
     </div>
@@ -146,50 +146,48 @@
 </main>
 <footer class="page-footer">
   <section class="page-footer__wrapper">
-    <h2 class="visually-hidden">Соц. сети</h2>
+    <h2 class="visually-hidden">Социальные сети</h2>
     <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy logo">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com">
-            <svg class="social__vkontakte"></svg>
+            <svg class="social__icon social__vkontakte" width="22" height="12">
+              <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+            </svg>
             <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com">
-            <svg class="social__instagram"></svg>
+            <svg class="social__icon social__instagram" width="16" heght="16">
+              <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+            </svg>
             <span class="visually-hidden">Мы в Инстаграме</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://facebook.com">
-            <svg class="social__facebook"></svg>
+            <svg class="social__icon social__facebook" width="10" heght="19">
+              <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+            </svg>
             <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">HTML Academy</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__image"></svg>
+        <p class="copyright__text">HTML Academy</p>
+        <svg class="copyright__image" width="40" heght="40">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </section>
 </footer>
-<script>
-  var toggle__nav = document.querySelector(".page-header__trigger"),
-    nav = document.querySelector(".page-header__list");
-
-    toggle__nav.classList.remove("page-header__trigger--nojs");
-    nav.classList.remove("page-header__list--nojs");
-
-    toggle__nav.addEventListener("click", function (e) {
-      e.preventDefault();
-      nav.classList.toggle("page-header__list--open");
-      toggle__nav.classList.toggle("page-header__trigger--close");
-  });
-</script>
+<script src="js/script.js"></script>
+<script src="js/picturefill.min.js"></script>
+<script src="js/svgxuse.min.js"></script>
 </body>
 </html>
