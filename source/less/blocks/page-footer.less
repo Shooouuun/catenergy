@@ -24,13 +24,21 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     width: 1300px;
-    padding: 28px 40px 33px;
+    padding: 26px 40px 32px;
     background-color: inherit;
   }
 }
 
 .page-footer__logo {
   margin: 37px 0 28px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 37px 0 28px;

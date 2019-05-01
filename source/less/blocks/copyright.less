@@ -2,7 +2,7 @@
   padding: 19px 0 19px;
 
   @media (min-width: @tablet-width) {
-    padding: 28px 0 19px;
+    padding: 29px 0 19px;
   }
 }
 
@@ -10,6 +10,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover > .copyright__image {
+    fill: @palette-secondary;
+  }
 }
 
 .copyright__text {
