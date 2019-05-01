@@ -73,6 +73,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.3s;
 
   @media (min-width: @tablet-width) {
     &--slim {
@@ -143,15 +144,25 @@
   background: @palette-tertiary;
   z-index: 1;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
     top: 50%;
-    right: -25px;
+    right: -28px;
     transform: translateY(-50%);
-    width: 24px;
+    width: 37px;
     height: 12px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+    z-index: -1;
+    transition: 0.3s;
+
+    &:hover {
+      right: -36px;
+    }
   }
 
   @media (min-width: @tablet-width) {

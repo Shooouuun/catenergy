@@ -96,6 +96,14 @@
   font-family: @font-family-primary;
   margin: 0 1px 0 6px;
 
+  &:hover {
+    border-bottom: 1px solid @tertiary-color;
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     padding: 5px 0 1px 0;
@@ -177,7 +185,16 @@
     background: @palette-primary;
     cursor: pointer;
     transform: translate(-50%, -50%);
-    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 3px 1px @state-hover;
+
+    &:hover {
+      box-shadow: 0 3px 3px 1px @state-hover;
+    }
+
+    &:active {
+      border: 2px solid #68b738;
+      box-shadow: 0 3px 3px 1px @state-active;
+    }
 
     &::after {
       content: "";
