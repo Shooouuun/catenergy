@@ -2,13 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи | Подбор программы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="keywords" content="Питание для котов, Подбор программы, Каталог продукции">
   <meta name="description" content="Функциональное питание для котов">
 </head>
 <body class="index-page">
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 <header class="page-header">
   <nav class="page-header__navigation" aria-label="Основная навигация">
     <a class="page-header__logotype" href="index.html">
@@ -43,11 +46,11 @@
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__label" for="cat-name">Имя:*</label>
-                    <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" pattern="[A-Za-zА-Яа-яЁё]+" required>
+                    <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" pattern="[A-Za-zА-Яа-яЁё]+" required="">
                   </li>
                   <li class="form__item">
                     <label class="form__label" for="cat-weight">Вес (кг):*</label>
-                    <input class="form__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+                    <input class="form__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required="">
                   </li>
                   <li class="form__item">
                     <label class="form__label" for="cat-age">Возраст (лет):</label>
@@ -59,7 +62,7 @@
               <legend class="visually-hidden">Выберите программу</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <input class="form__input form__input--radio-field" type="radio" name="radio-group" id="filter-weightloss" checked>
+                  <input class="form__input form__input--radio-field" type="radio" name="radio-group" id="filter-weightloss" checked="">
                   <label class="form__label form__label--radio-field" for="filter-weightloss">Похудение</label>
                 </li>
                 <li class="form__item">
@@ -80,12 +83,12 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="user-email">E-mail:*</label>
-                <input class="form__input" type="email" id="user-email" name="user-name" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                <input class="form__input" type="email" id="user-email" name="user-name" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required="">
                 <svg class="form__icon form__icon--email"></svg>
               </li>
               <li class="form__item">
                 <label class="form__label" for="user-tel">Телефон:*</label>
-                <input class="form__input" type="tel" id="user-tel" name="user-tel" placeholder="8 (960) 900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                <input class="form__input" type="tel" id="user-tel" name="user-tel" placeholder="8 (960) 900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="">
                 <svg class="form__icon form__icon--tel"></svg>
               </li>
             </ul>
@@ -103,7 +106,7 @@
             <legend class="visually-hidden">Выберите дополительную информацию</legend>
             <ul class="form__list form__list--checkbox-field">
               <li class="form__item form__item--checkbox-field">
-                <input class="form__input form__input--checkbox-field" type="checkbox" name="checkbox-group" id="filter-sugar" checked>
+                <input class="form__input form__input--checkbox-field" type="checkbox" name="checkbox-group" id="filter-sugar" checked="">
                 <label class="form__label form__label--checkbox-field" for="filter-sugar">Сахарозаменитель</label>
               </li>
               <li class="form__item form__item--checkbox-field">
