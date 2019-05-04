@@ -4,6 +4,7 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    margin-right: auto;
   }
 }
 
@@ -54,6 +55,18 @@
   width: 16px;
   height: 16px;
   margin-left: -28px;
+
+  fill: @palette-six;
+
+  &:hover {
+    fill: @palette-secondary;
+  }
+
+  &:active {
+    fill: @palette-secondary;
+    opacity: 0.3;
+  }
+
 
   @media (min-width: @tablet-width) {
     width: 23px;
