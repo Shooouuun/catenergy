@@ -1,0 +1,23 @@
+.selection {
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.selection__form {
+  @media (min-width: @tablet-width) {
+    padding: 27px 17px 40px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 27px 0 40px 0;
+  }
+}

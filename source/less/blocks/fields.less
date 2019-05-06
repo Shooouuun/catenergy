@@ -1,0 +1,316 @@
+.fields__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 32px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+.fields__set {
+  &--personal {
+    padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 72px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 46.72%;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--program {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid @border-color-fourth;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding-left: 28px;
+      padding-right: 28px;
+      margin-bottom: 47px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 46.72%;
+      margin: 0;
+    }
+  }
+
+  &--contacts {
+    padding-top: 8px;
+    padding-bottom: 9px;
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 12px;
+
+      .fields__block {
+        width: 46.72%;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--descr {
+    padding-bottom: 5px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 36px;
+      padding-bottom: 6px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 7px;
+      width: 100%;
+    }
+  }
+
+  &--add {
+    padding-bottom: 23px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 36px;
+      padding-bottom: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+      padding-bottom: 29px;
+    }
+  }
+}
+
+.fields__block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.fields__label {
+  font-size: 16px;
+  text-transform: @text-transform-base;
+  color: @primary-color;
+  white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.fields__textfield {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.fields__textarea,
+.fields__textfield {
+  font-family: inherit;
+  font-size: 16px;
+  text-transform: @text-transform-base;
+  padding: 9px 15px;
+  outline: 1px solid @border-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 21px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    outline: 2px solid @border-color-secondary;
+  }
+
+  &:focus,
+  &:active {
+    outline: 2px solid @secondary-color;
+
+    ~ svg {
+      fill: @primary-palette-hover;
+    }
+  }
+
+  &:focus:invalid {
+    outline: 2px solid @secondary-palette-focus;
+
+    ~ svg {
+      fill: @secondary-palette-focus;
+    }
+  }
+}
+
+.fields__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 34px;
+    right: -20px;
+    background-color: @palette-secondary;
+
+    @media (min-width: @tablet-width) {
+      width: 200%;
+      top: 42px;
+      right: -67px;
+    }
+  }
+}
+
+.fields__title {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @primary-color;
+  max-width: 205px;
+  padding-right: 24px;
+  background-color: @palette-primary;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: none;
+  }
+}
+
+.fields__inner {
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.fields__contact-icon {
+  position: absolute;
+
+  &--mail {
+    right: 16px;
+    top: 14px;
+    margin-top: 2px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 6px;
+      margin-right: 3px;
+    }
+  }
+
+  &--phone {
+    right: 13px;
+    top: 12px;
+    margin-top: 1px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 5px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.fields__textarea {
+  width: 100%;
+  height: 150px;
+  padding-right: 10px;
+  margin-top: 35px;
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 76px;
+    padding: 9px 18px;
+    min-height: 174px;
+  }
+}
+
+.fields__button-block {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.fields__button {
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.button {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: @text-transform-base;
+  color: @quaternary-color;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: @palette-secondary;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: 284px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin-right: 71px;
+  }
+}
+
+.fields__note {
+  font-family: @font-family-secondary;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+}

@@ -28,19 +28,23 @@
     width: 30px;
     height: 30px;
     background: url("../img/icon-plus.svg") no-repeat center;
+
+    @media (min-width: @tablet-width) {
+      top: 54px;
+      width: 60px;
+      height: 60px;
+      opacity: 0.2;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 93px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     margin: 0 30px;
     padding: 40px 35px 39px;
     border: 1px solid @border-color;
-
-    &::before {
-      top: 54px;
-      width: 60px;
-      height: 60px;
-      opacity: 0.2;
-    }
   }
 
   @media (min-width: @desktop-width) {

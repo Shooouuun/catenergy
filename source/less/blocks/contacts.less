@@ -1,13 +1,28 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   padding: 0 20px;
   background-color: @palette-primary;
+
+  &--color {
+    background-color: @palette-tertiary;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0 71px;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    position: absolute;
+    left: 110px;
+    top: -2px;
+    max-width: 568px;
+    width: 100%;
+    background: @palette-primary;
+    padding: 0 77px;
+    transform: translateY(48%);
   }
 }
 
@@ -53,6 +68,10 @@
       display: block;
       margin-top: 23px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 

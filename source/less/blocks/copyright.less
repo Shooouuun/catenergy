@@ -1,8 +1,8 @@
 .copyright {
-  padding: 19px 0 19px;
+  padding: 22px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 29px 0 19px;
+    padding: 31px 0 19px;
   }
 }
 
@@ -10,6 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
 
   &:active {
     opacity: 0.3;
@@ -27,13 +31,17 @@
   color: @secondary-color;
 
   @media (min-width: @tablet-width) {
-    margin-right: 15px;
+    margin-right: 18px;
   }
 }
 
 .copyright__image {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 34px;
   fill: @palette-six;
-  margin-right: -6px;
+  margin-right: -4px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 2px;
+  }
 }

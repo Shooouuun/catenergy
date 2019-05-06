@@ -149,6 +149,10 @@
     opacity: 0.3;
   }
 
+  &:hover::after {
+    right: -36px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -160,10 +164,6 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat center;
     z-index: -1;
     transition: 0.3s;
-
-    &:hover {
-      right: -36px;
-    }
   }
 
   @media (min-width: @tablet-width) {
