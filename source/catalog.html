@@ -12,7 +12,7 @@
 </head>
 <body class="index-page">
   <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
+    <svg xmlns="http://www.w3.org/2000/svg"></svg>
   </div>
 <header class="page-header">
   <nav class="page-header__navigation" aria-label="Основная навигация">
@@ -313,7 +313,7 @@
                 </tr>
               </tbody>
             </table>
-            <a class="btn additional-products--btn" href="cart.html">Заказать</a>
+            <a class="btn btn--additional-products" href="cart.html">Заказать</a>
         </li>
         <!-- item2 -->
         <li class="additional-products__item">
@@ -326,7 +326,7 @@
                 </tr>
               </tbody>
             </table>
-            <a class="btn additional-products--btn" href="cart.html">Заказать</a>
+            <a class="btn btn--additional-products" href="cart.html">Заказать</a>
         </li>
         <!-- item3 -->
         <li class="additional-products__item">
@@ -339,7 +339,7 @@
               </tr>
             </tbody>
           </table>
-            <a class="btn additional-products--btn" href="cart.html">Заказать</a>
+            <a class="btn btn--additional-products" href="cart.html">Заказать</a>
         </li>
         <!-- item4 -->
         <li class="additional-products__item">
@@ -352,7 +352,7 @@
               </tr>
             </tbody>
           </table>
-            <a class="btn additional-products--btn" href="cart.html">Заказать</a>
+            <a class="btn btn--additional-products" href="cart.html">Заказать</a>
         </li>
       </ul>
       <div class="additional-products__banner">
@@ -360,7 +360,7 @@
           <svg class="additional-products__image" width="55" height="60">
             <use xlink:href="img/sprite.svg#icon-gift"></use>
           </svg>
-          <p class="additional-products__banner-link" href="#">Закажите все и получите чехол для кота в подарок!</p>
+          <a class="additional-products__banner-link" href="#">Закажите все и получите чехол для кота в подарок!</a>
         </div>
       </div>
     </div>
@@ -384,6 +384,7 @@
 </main>
 <footer class="page-footer">
   <section class="page-footer__wrapper">
+    <h2 class="visually-hidden">Социальные сети</h2>
     <div class="page-footer__column">
       <a class="page-footer__link" href="index.html">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy logo">
@@ -401,7 +402,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com">
-            <svg class="social__icon social__instagram" width="16" heght="16">
+            <svg class="social__icon social__instagram" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
             </svg>
             <span class="visually-hidden">Мы в Инстаграме</span>
@@ -409,7 +410,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="https://facebook.com">
-            <svg class="social__icon social__facebook" width="10" heght="19">
+            <svg class="social__icon social__facebook" width="10" height="19">
               <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
             </svg>
             <span class="visually-hidden">Мы в Фейсбуке</span>
@@ -420,7 +421,7 @@
     <div class="page-footer__column copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <svg class="copyright__image" width="40" heght="40">
+        <svg class="copyright__image" width="40" height="40">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
         </svg>
       </a>
@@ -430,5 +431,6 @@
 <script src="js/script.min.js"></script>
 <script src="js/picturefill.min.js"></script>
 <script src="js/svgxuse.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
 </body>
 </html>

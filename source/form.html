@@ -12,7 +12,7 @@
 </head>
 <body class="index-page">
   <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
+    <svg xmlns="http://www.w3.org/2000/svg"></svg>
   </div>
 <header class="page-header">
   <nav class="page-header__navigation" aria-label="Основная навигация">
@@ -45,55 +45,55 @@
     <form action="https://echo.htmlacademy.ru" class="selection__form fields" method="get">
       <div class="fields__wrapper">
         <div class="fields__set fields__set--personal">
-            <div class="fields__block">
-              <label for="catname" class="fields__label">Имя:*</label>
-              <input type="text" class="fields__textfield" id="catname" name="catname" required="" placeholder="Барсик">
-            </div>
-            <div class="fields__block">
-              <label for="weight" class="fields__label">Вес (кг):*</label>
-              <input type="text" class="fields__textfield" id="weight" name="weight" required="" placeholder="7">
-            </div>
-            <div class="fields__block">
-              <label for="age" class="fields__label">Возраст (лет):</label>
-              <input type="text" class="fields__textfield" id="age" name="age" required="" placeholder="7">
-            </div>
+          <div class="fields__block">
+            <label for="catname" class="fields__label">Имя:*</label>
+            <input type="text" class="fields__textfield" id="catname" name="catname" placeholder="Барсик">
+          </div>
+          <div class="fields__block">
+            <label for="weight" class="fields__label">Вес (кг):*</label>
+            <input type="text" class="fields__textfield" id="weight" name="weight" placeholder="7">
+          </div>
+          <div class="fields__block">
+            <label for="age" class="fields__label">Возраст (лет):</label>
+            <input type="text" class="fields__textfield" id="age" name="age" placeholder="7">
+          </div>
         </div>
         <div class="fields__set fields__set--program">
-            <ul class="fields__list program-type-list">
-              <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked>
-                <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
-              </li>
-              <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
-                <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
-              </li>
-              <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
-                <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
+          <ul class="fields__list program-type-list">
+            <li class="program-type-list__item">
+              <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked>
+              <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
+            </li>
+            <li class="program-type-list__item">
+              <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
+              <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
+            </li>
+            <li class="program-type-list__item">
+              <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
+              <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
         </div>
         <div class="fields__set fields__set--contacts">
-            <div class="fields__head">
-              <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+          <div class="fields__head">
+            <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+          </div>
+          <div class="fields__inner">
+            <div class="fields__block">
+              <label for="email" class="fields__label">E-mail:*</label>
+              <input type="email" class="fields__textfield" id="email" name="email" placeholder="kuklachev@gmail.com">
+              <svg class="fields__contact-icon fields__contact-icon--mail" width="17" height="13">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </div>
-            <div class="fields__inner">
-              <div class="fields__block">
-                <label for="email" class="fields__label">E-mail:*</label>
-                <input type="email" class="fields__textfield" id="email" name="email" required="" placeholder="kuklachev@gmail.com">
-                <svg class="fields__contact-icon fields__contact-icon--mail" width="17" height="13">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </div>
-              <div class="fields__block">
-                <label for="phone" class="fields__label">Телефон:*</label>
-                <input type="tel" class="fields__textfield" id="phone" name="phone" required="" placeholder="8 (960) 900-60-90">
-                <svg class="fields__contact-icon fields__contact-icon--phone" width="21" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </div>
+            <div class="fields__block">
+              <label for="phone" class="fields__label">Телефон:*</label>
+              <input type="tel" class="fields__textfield" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+              <svg class="fields__contact-icon fields__contact-icon--phone" width="21" height="20">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </div>
+          </div>
         </div>
         <div class="fields__set fields__set--descr">
           <div class="fields__head fields__head--indents">
@@ -102,32 +102,33 @@
           <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <div class="fields__set fields__set--add">
-            <div class="fields__head">
-              <h2 class="fields__title">Дополнительно</h2>
-            </div>
-            <ul class="fields__list add-list">
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked>
-                <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
-              </li>
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="water" id="water">
-                <label for="water" class="add-list__label" tabindex="0">Питьевая вода</label>
-              </li>
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="milk" id="milk">
-                <label for="milk" class="add-list__label" tabindex="0">Молоко</label>
-              </li>
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="vitamins" id="vitamins">
-                <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
-              </li>
-            </ul>
+          <div class="fields__head">
+            <h2 class="fields__title">Дополнительно</h2>
+          </div>
+          <ul class="fields__list add-list">
+            <li class="add-list__item">
+              <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked>
+              <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
+            </li>
+            <li class="add-list__item">
+              <input type="checkbox" class="add-list__input" name="water" id="water">
+              <label for="water" class="add-list__label" tabindex="0">Питьевая вода</label>
+            </li>
+            <li class="add-list__item">
+              <input type="checkbox" class="add-list__input" name="milk" id="milk">
+              <label for="milk" class="add-list__label" tabindex="0">Молоко</label>
+            </li>
+            <li class="add-list__item">
+              <input type="checkbox" class="add-list__input" name="vitamins" id="vitamins">
+              <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
+            </li>
+          </ul>
         </div>
         <div class="fields__button-block">
           <button class="fields__button button" type="submit">Отправить заявку</button>
           <span class="fields__note">* — Обязательные поля</span>
         </div>
+      </div>
     </form>
   </section>
   <section class="contacts">
@@ -167,7 +168,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.instagram.com">
-            <svg class="social__icon social__instagram" width="16" heght="16">
+            <svg class="social__icon social__instagram" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
             </svg>
             <span class="visually-hidden">Мы в Инстаграме</span>
@@ -175,7 +176,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="https://facebook.com">
-            <svg class="social__icon social__facebook" width="10" heght="19">
+            <svg class="social__icon social__facebook" width="10" height="19">
               <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
             </svg>
             <span class="visually-hidden">Мы в Фейсбуке</span>
@@ -186,7 +187,7 @@
     <div class="page-footer__column copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <svg class="copyright__image" width="40" heght="40">
+        <svg class="copyright__image" width="40" height="40">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
         </svg>
       </a>
@@ -196,5 +197,6 @@
 <script src="js/script.min.js"></script>
 <script src="js/picturefill.min.js"></script>
 <script src="js/svgxuse.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
 </body>
 </html>

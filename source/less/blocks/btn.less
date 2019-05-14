@@ -7,3 +7,23 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.btn--additional-products {
+  background: @palette-secondary;
+  color: @quaternary-color;
+  display: block;
+
+  &:hover {
+    background-color: @primary-palette-hover;
+  }
+
+  &:active {
+    background-color: @primary-palette-hover;
+    color: @quaternary-color-active;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-bottom: 16px;
+  }
+}
