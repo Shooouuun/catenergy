@@ -71,7 +71,7 @@
   align-items: center;
   max-width: 205px;
   margin: 0 auto;
-  padding: 30px 0 32px;
+  padding: 30px 0 31px;
 
   @media (min-width: @tablet-width) {
     max-width: 571px;
@@ -95,6 +95,7 @@
   color: @primary-color;
   font-family: @font-family-primary;
   margin: 0 1px 0 6px;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     border-bottom: 1px solid @tertiary-color;
@@ -192,7 +193,7 @@
     }
 
     &:active {
-      border: 2px solid #68b738;
+      border: 2px solid @primary-palette-hover;
       box-shadow: 0 3px 3px 1px @state-active;
     }
 
