@@ -23,6 +23,9 @@ var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var pipeline = require("readable-stream").pipeline;
 
+const ghPages = require('gh-pages');
+const path = require('path');
+
 
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
@@ -136,3 +139,8 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
